@@ -1,0 +1,96 @@
+/* #selectOperation > div {
+    vertical-align: middle;
+    border: 1px solid #99ccff;
+    display: inline-block;
+    margin: 5px;
+    min-height: 30px;
+    min-width: 75px;
+    padding: 2px;
+    padding-top: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+#selectOperation > div:hover {
+    box-shadow: -1px 0 10px #99ccff;
+} */
+
+#domNodes {
+    margin: 0px 0px;
+    padding: 20px;
+    border: 1px solid #7a7a7a;
+    border-radius: 30px;
+}
+
+#selectOperation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.header_article {
+    margin: 50px 0px 0px 0px;
+}
+
+#selectOperation button {
+    margin: 10px;
+}
+
+#domNodes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#hgroup h3 strong {
+    align-self: center;
+    max-width: 100%;
+    position: static;
+}
+
+#domNodes div {
+    border: 3px solid rgb(145, 132, 132);
+    margin: 25px;
+    min-height: 70px;
+    min-width: 160px;
+    max-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#domNodes span {
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 25px;
+    min-height: 70px;
+    min-width: 160px;
+    max-width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.addDiv {
+    background-color: #fdf9c4;
+    border-radius: 25px;
+}
+.addSpan {
+    background-color: #df97b7;
+    border-radius: 25px;
+}
+
+.setContentPrev {
+    background-color: #a9ed86;
+    border-radius: 25px;
+}
+.delPrevNode {
+    background-color: #04a9c7;
+    border-radius: 25px;
+}
+.delNextNode {
+    background-color: #da7ceb;
+    border-radius: 25px;
+}

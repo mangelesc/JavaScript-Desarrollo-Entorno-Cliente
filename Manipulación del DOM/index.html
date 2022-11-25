@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>María Ángeles Córdoba. Actividad 04. M06</title>
+
+        <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
+        <script defer src="./JS/actividad04.js" defer></script>
+    </head>
+    <body>
+        <header>
+        <main>
+            <div class="container text-center">
+                <h1 class="display-5 fw-bold col-6 mx-auto ">
+                    <strong class=>Actividad 04 M06</strong>
+                </h1>
+                <h1 class="display-6 fw-bold text-muted col-6 mx-auto" >
+                    <strong>María Ángeles Córdoba</strong>
+                </h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <article class="article_main_web">
+                    <header class="container header_article">
+                        <hgroup>
+                            <h1 class="display-5 fw-bold text-muted py-2">
+                                <strong>Manipulación del DOM</strong>
+                            </h1>
+                        </hgroup>
+                    </header>
+                    <div id="selectOperation">
+
+
+                        <!-- 4.1. <div id="addText">ADD TEXT</div> -->
+                        <button
+                            id="addText"
+                            class="btn btn-outline-info btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal1"
+                        >
+                            ADD TEXT
+                        </button>
+
+                        <!-- Ventana modal -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal1"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.1
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Introduce un nuevo texto para el botón
+                                        <input
+                                            id="addTextInput"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Add yout text here"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            id="addTextButton"
+                                            type="button"
+                                            class="btn btn-outline-info"
+                                            data-bs-dismiss="modal" >
+                                            Modificar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- 4.2. <div id="setColor">SET A COLOR</div> -->   
+                        <button
+                            id="setColor"
+                            class="btn btn-outline-info btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal2"
+                        >
+                            SET COLOR
+                        </button>
+
+                        <!-- Ventana modal -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal2"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.2
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Establece un nuevo color de fondo del botón
+                                        <input
+                                            id="setColorInput"
+                                            type="color"
+                                            class="form-control"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            id="setColorButton"
+                                            type="button"
+                                            class="btn btn-outline-info"
+                                            data-bs-dismiss="modal" >
+                                            Modificar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 4.3. <div id="addDiv">NEW ADD DIV</div> -->
+                        <button
+                            id="addDiv"
+                            class="btn btn-outline-info btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal3">
+                            ADD NEW DIV
+                        </button>
+                        
+                        <!-- Ventana modal -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal3"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.3
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Establece un texto para el nuevo Div
+                                        <input
+                                            id="addDivInput"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="New Div's Name"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            id="addDivButton"
+                                            type="button"
+                                            class="btn btn-outline-info"
+                                            data-bs-dismiss="modal" >
+                                            Crear
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 4.4. <div id="addSpan">NEW ADD SPAN</div> -->
+                        <button
+                            id="addSpan"
+                            class="btn btn-outline-info btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal4">
+                            ADD NEW SPAN
+                        </button>
+                        
+                        <!-- Ventana modal -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal4"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.4
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Establece el texto para el nuevo span
+                                        <input
+                                            id="addSpanInput"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Text for the new Span"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            id="addSpanButton"
+                                            type="button"
+                                            class="btn btn-outline-info"
+                                            data-bs-dismiss="modal" >
+                                            Crear
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4.5. <div id="setContentPrev">  NEW DIV SET CONTENT PREVIOUS ELEMENT </div> -->
+                        <button
+                            id="setContentPrev"
+                            class="btn btn-outline-info btn-lg">
+                            NEW DIV SET CONTENT PREV. ELEMENT
+                        </button>
+
+                        <!-- Ventana modal en caso de error-->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal5error"
+                            tabindex="-1"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="">
+                                            Actividad 4.5.1
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Ups! Si no hay un div anterior... </p>
+                                        <p>¡¡¡no puedes modificar <b>un div anterior</b>!!!</p>
+                                        <img src="./imgs/error.jpg" alt="error">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+
+                        <!-- 4.6<div id="delPrevNode">NEW DIV DELETE PREVIOUS ELEMENT</div> -->
+                        <button 
+                            id="delPrevNode" 
+                            id="delPrevNodeButton"
+                            class="btn btn-outline-info btn-lg">
+                            NEW DIV DELETE PREV. ELEMENT
+                        </button>
+
+                        <!-- Ventana modal en caso de error -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal6error"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.6 - Error
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Ups! Si no hay un div anterior... </p>
+                                        <p>¡¡¡no puedes eliminar <b>un div anterior</b>!!!</p>
+                                        <img src="./imgs/error.jpg" alt="error">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 4.7<div id="delNextNode">NEW DIV DELETE NEXT ELEMENT</div> -->
+                        <button
+                            id="delNextNode"
+                            class="btn btn-outline-info btn-lg">
+                            NEW DIV DELETE NEXT ELEMENT
+                        </button>
+
+                        <!-- Ventana modal en caso de error-->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal7error"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.7 - Error
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Ups! Si no hay un div siguiente... </p>
+                                        <p>¡¡¡no puedes eliminar <b>el div siguiente</b>!!!</p>
+                                        <img src="./imgs/error.jpg" alt="error">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 4.8<div id="addAttr">NEW DIV SET ATTRIBUTE</div> -->
+                        <button
+                            id="addAttr"
+                            class="btn btn-outline-info btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal8">
+                            NEW DIV SET ATTRIBUTE
+                        </button>
+
+                        <!-- Ventana modal -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal8"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.8
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Posición del elemento en el DOM
+                                        <input
+                                            id="addAttrNum"
+                                            type="number"
+                                            class="form-control"
+                                            placeholder="Number"/>
+                                    </div>
+                                    <div class="modal-body">
+                                        Nombre del atributo que quieres añadir o modificar
+                                        <input
+                                            id="addAttrNombre"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Name"/>
+                                    </div>
+                                    <div class="modal-body">
+                                        Valor del atributo
+                                        <input
+                                            id="addAttrValor"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Value"/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            id="addAttrButton"
+                                            type="button"
+                                            class="btn btn-outline-info"
+                                            data-bs-dismiss="modal" >
+                                            Añadir
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 4.9<div id="delAllType">NEW DIV REMOVE ALL TYPE</div> -->
+                        <button
+                            id="delAllType"
+                            class="btn btn-outline-info btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#ventanaModal9">
+                            NEW DIV REMOVE ALL TYPE
+                        </button>
+
+                        <!-- Ventana modal -->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal9"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Actividad 4.9
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        ¿Qué tipo de dato quieres eliminar de #domNodes?
+                                        <input
+                                            id="delAllTypeInput"
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="span/div/h1/p/..."/>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            id="delAllTypeButton"
+                                            type="button"
+                                            class="btn btn-outline-info"
+                                            data-bs-dismiss="modal" >
+                                            Borrar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ventana modal en caso de error-->
+                        <div
+                            class="modal fade"
+                            id="ventanaModal9error"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true" >
+                            <div class="modal-dialog modal-dialog-centered modal-style">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            Ha habido un error
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Ups! Has introducido un ... </p>
+                                        <p><b>dato incorrecto</b></p>
+                                        <img src="./imgs/notFound.jpg" alt="error">                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    </nav>
+                    <section id="domNodes">
+                        <hgroup id="hgroup">
+                            <h3 class="display-5 fw-bold text-muted py-2">
+                                <strong>Add your divs here: </strong>
+                            </h3>
+                        </hgroup>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </body>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+    ></script>
+</html>
+
