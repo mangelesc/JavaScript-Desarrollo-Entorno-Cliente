@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>M Ángeles Córdoba. Actividad 05</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <script defer src="./JS/form.js"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1><b>PRÁCTICA 05 - M06</b></h1>
+                <h4><b>MARÍA ÁNGELES CÓRDOBA</b><br /></h4>
+            </div>
+        </header>
+
+        <main class="container">
+            <h2 class="tittle">Contact Form</h2>
+
+            <form
+                action="./html/submittedForm.html"
+                name="formAct05"
+                id="formAct05"
+            >
+                <label for="name">
+                    <span class="labelSpan">Name</span>
+                    <input
+                        class="labelInput"
+                        type="text"
+                        name="nameUser"
+                        id="nameUser"
+                        minlength="3"
+                        maxlength="10"
+                        required
+                        placeholder="Write you name here"
+                    />
+                    <span class="labelSpanMessage"></span>
+                </label>
+
+                <label for="email">
+                    <span class="labelSpan">Email </span>
+                    <input
+                        class="labelInput"
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        placeholder="Write your email here"
+                    />
+                    <span class="labelSpanMessage"></span>
+                </label>
+
+                <label for="phone">
+                    <span class="labelSpan">Phone </span>
+                    <input
+                        class="labelInput"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        minlength="9"
+                        maxlength="9"
+                        pattern="[0-9]{9}"
+                        placeholder="Write you phone number here"
+                        required
+                    />
+                    <span class="labelSpanMessage"></span>
+                </label>
+
+                <label for="password">
+                    <span class="labelSpan">Password </span>
+                    <input
+                        class="labelInput"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Password"
+                        minlength="4"
+                        maxlength="10"
+                        required
+                    />
+                    <span class="labelSpanMessage"></span>
+                </label>
+
+                <label for="passwordValidate">
+                    <span class="labelSpan">Confirm Password </span>
+                    <input
+                        class="labelInput"
+                        type="password"
+                        name="passwordValidate"
+                        id="passwordValidate"
+                        placeholder="Password"
+                        minlength="4"
+                        maxlength="10"
+                        required
+                    />
+                    <span class="labelSpanMessage"></span>
+                </label>
+
+                <label for="date">
+                    <span class="labelSpan">Date </span>
+                    <input
+                        class="labelInput"
+                        type="date"
+                        name="date"
+                        id="date"
+                        required
+                    />
+                    <span class="labelSpanMessage"></span>
+                </label>
+
+                <label for="software">
+                    <span class="labelSpan selectArea">Choose your software </span>
+                    <select
+                        name="software"
+                        id="software"
+                        multiple>
+                        <option value="Windows">Windows</option>
+                        <option value="Linux">Linux</option>
+                    </select>
+                    <span class="labelSpanMessage"></span>
+                </label>
+                <input
+                    class="buttonAdd"
+                    type="button"
+                    name="newSoftware"
+                    id="newSoftware"
+                    value="Add software"
+                />
+
+                <label for="">
+                    <span class="labelSpan">Choose your favourite music genres </span>
+                    <div id="checkboxDiv">
+                        <input 
+                            type="checkbox" 
+                            name="music" 
+                            id="rock" 
+                            value="rock" />
+                            <span>Rock</span>
+                        <input 
+                            type="checkbox" 
+                            name="music" 
+                            id="rap" 
+                            value="rap" />
+                            <span>Rap</span>
+                        <input 
+                            type="checkbox" 
+                            name="music" 
+                            id="techno" 
+                            value="techno" />
+                            <span>Techno</span>
+                    </div>
+                </label>
+                <input
+                    class="buttonAdd"
+                    type="button"
+                    name="newMusic"
+                    id="newMusic"
+                    value="Add music genre"
+                />  
+                <div class = "label">
+                    <textarea name="checkArea" id="checkArea"></textarea>
+                </div>
+                <div class="divButton">
+                    <input  class="submit-btn" type="submit" name="sendButton" id="sendButton" value="Submit">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>
