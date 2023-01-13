@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Arvo", serif;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    background-color: #e2a3c7bb;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+header div h1 {
+    margin: 1em 1em;
+    text-align: center;
+}
+
+header div h3 {
+    text-align: center;
+    margin: 1em 1em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#combinationsStyle{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.box{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f2f2f2;
+    margin: 30px;
+    padding: 0px 30px 30px 30px;
+    border-radius: 20px;
+}
+
+h4{
+    text-align: center;
+    font-size: 8pt;
+    padding: 30px 0px 10px 0px;
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 300px;
+    margin: 0px 31% 20px 31%;
+}
+.labelInput {
+    width: 100px;
+    background-color: #A8DCD9;
+    border: none;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.labelInput:hover {
+    background-color: #6bc2bd;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #9cc4cb;
+}
+
+.labelInput:focus {
+    background-color: white;
+    border: solid 1px #f3f3f4;
+    box-shadow: 0 0 4px #9cc4cb;
+}
+.SpanMessage{
+    text-align: right;
+    padding-right: 15px;
+    font-size: 10pt;
+    align-self: center ;
+}
+
+.boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton button {
+    justify-self: center;
+    background-color: #E2A3C7;
+    width: 160px;
+    font-size: 10pt;
+    text-align: center;
+    padding: 15px;
+    border-color: #829491;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boton button:hover {
+    opacity: 0.75;
+}
+
+.modal-header{
+    background-color:#9cc4cb;
+}
+#divBtnHelp{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+}
+#imgHelp{
+    max-width: 100px;
+}
